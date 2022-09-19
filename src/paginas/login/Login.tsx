@@ -9,7 +9,7 @@ import './Login.css';
 
 function Login () {
 
-    let navigate = useNavigate();
+    let history = useNavigate();
 // irá guardar/controlar o uso do token na API
     const [token, setToken] = useLocalStorage('token');
 
@@ -35,7 +35,7 @@ function Login () {
 
     useEffect(() => {
         if(token != ''){
-            navigate('/home')
+            history('/home')
         }
     }, [token])
 
