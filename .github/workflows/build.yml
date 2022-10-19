@@ -11,7 +11,7 @@ jobs:
     name: Build Proj
     steps:
       - uses: actions/checkout@v2
-        name: checkout
+        uses: actions/setup-node@v1
 
       - name: Build web-app
         run: |
