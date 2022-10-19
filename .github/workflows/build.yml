@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-lastest
     name: Build Proj
     steps:
-    //serviço a ser usado
       - uses: actions/checkout@v2
         name: checkout
-        
+
       - name: Build web-app
         run: |
           npm ci
